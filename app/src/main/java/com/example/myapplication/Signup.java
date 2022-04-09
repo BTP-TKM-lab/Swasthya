@@ -16,16 +16,25 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldPath;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Signup extends AppCompatActivity {
     private FirebaseAuth mAuth;
     EditText email,password,confirmpassword,firstname,lastname;
     Button signupbtn,loginButton;
+    FirebaseFirestore firebaseFirestore;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        firebaseFirestore= FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            isFirstTime();
+        }
+        setContentView(R.layout.activity_signup);
         email=findViewById(R.id.emailid);
         password=findViewById(R.id.password);
         confirmpassword=findViewById(R.id.confirmpassword);
@@ -82,15 +91,35 @@ public class Signup extends AppCompatActivity {
                 });
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
-        }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        // Check if user is signed in (non-null) and update UI accordingly.
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if(currentUser != null){
+//            isFirstTime();
+//        }
+//    }
+    private void isFirstTime() {
+        String uuid =FirebaseAuth.getInstance().getUid();
+        firebaseFirestore.collection("USERS").document(uuid).get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        DocumentSnapshot documentSnapshot=task.getResult();
+                        if(documentSnapshot.exists()){
+                            Toast.makeText(Signup.this, "User exist", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            finish();
+                        }
+                        else{
+                            startActivity(new Intent(getApplicationContext(),Initial_actitvity1.class));
+                            finish();
+                            //Toast.makeText(Login.this, "users does not exist", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
     }
     private void sendVerificationEmail()
     {
