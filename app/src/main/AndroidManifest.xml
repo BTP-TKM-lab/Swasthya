@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Gout"
+            android:exported="false" />
+        <activity
             android:name=".Initial_activity3"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".Initial_activity2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".Initial_actitvity1"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".Mcq_questions"
@@ -39,9 +39,9 @@
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.MyApplication"
-            />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MyApplication" />
     </application>
 
 </manifest>

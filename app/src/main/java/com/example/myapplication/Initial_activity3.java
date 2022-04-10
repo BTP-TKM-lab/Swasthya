@@ -74,12 +74,16 @@ public class Initial_activity3 extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(Initial_activity3.this, "Added to database", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
                             finish();
                         }
                         else{
                             Toast.makeText(Initial_activity3.this, "Not Added to database ", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),Initial_actitvity1.class));
+                            Intent intent = new Intent(getApplicationContext(), Initial_actitvity1.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
                             finish();
                         }
                     }

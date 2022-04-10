@@ -14,7 +14,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button Logout;
+    Button Logout,arthritis,gout;
 
 
     @Override
@@ -22,6 +22,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Logout=findViewById(R.id.logout);
+        arthritis=findViewById(R.id.arthritis);
+        gout=findViewById(R.id.gout);
+        arthritis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              startActivity(new Intent(getApplicationContext(),Mcq_questions.class));
+
+            }
+        });
+        gout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),Gout.class));
+
+            }
+        });
 
 
 
@@ -50,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+
 
 }

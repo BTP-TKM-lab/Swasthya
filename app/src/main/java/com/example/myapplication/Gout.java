@@ -7,33 +7,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Mcq_questions extends AppCompatActivity {
+public class Gout extends AppCompatActivity {
     TextView question;
     Button yes,no;
     Binarytree binarytree1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mcq);
+        setContentView(R.layout.activity_gout);
         question=findViewById(R.id.question);
         yes=findViewById(R.id.yes);
         no=findViewById(R.id.no);
 
-        Binarytree binarytree=new Binarytree("Are you suffering from joint pain ?");
-        binarytree.left =new Binarytree("is the pain symmetric ?") ;
-        binarytree.right =new Binarytree("false") ;
-        binarytree.left.left= new Binarytree("true");
-        binarytree.left.right=new Binarytree("Do you experience inflammation ?");
-        binarytree.left.right.left= new Binarytree("true");
-        binarytree.left.right.right=new Binarytree("Do you experience morning stiffness ?");
+        Binarytree binarytree=new Binarytree("Joint pain ?");
+        binarytree.left =new Binarytree("Possibility of Gout or Arthritis ?") ;
+        binarytree.right =new Binarytree("Absence of primary symptom for arthritic Diseases ?") ;
+        binarytree.left.left= new Binarytree("Visible Lumps");
+        binarytree.left.right=new Binarytree("Pain start at MTP joint?");
+        binarytree.left.left.left= new Binarytree("Tophaceous Gout");
+        binarytree.left.left.right= new Binarytree("false");
 
-        binarytree.left.right.right.left=new Binarytree("Positive . Does stiffness lasts " +
-                "for more than 30 mins");
-
+        binarytree.left.right.left=new Binarytree("true");
+        binarytree.left.right.right=new Binarytree("Visible Lumps");
+        binarytree.left.right.right.left=new Binarytree("Tophaceous Gout");
         binarytree.left.right.right.right=new Binarytree("false");
-        binarytree.left.right.right.left.left=new Binarytree("Positive w/RA");
-        binarytree.left.right.right.left.right=new Binarytree("Positive w/OA");
-         binarytree1=binarytree;
+
+
+        binarytree1=binarytree;
 
         reload();
         yes.setOnClickListener(new View.OnClickListener() {
