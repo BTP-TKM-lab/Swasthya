@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_diagnosis.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_gout.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_initial2.xml" value="0.2234375" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_initial3.xml" value="0.2234375" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_profile.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/mcq.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/menu/menu.xml" value="0.19947916666666668" />
       </map>
     </option>

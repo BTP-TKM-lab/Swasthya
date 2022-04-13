@@ -9,37 +9,55 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="300dp"
-        android:gravity="center"
-
         android:layout_height="wrap_content"
-        tools:text="Questions ?"
+
+        android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.164"
+        tools:text="Questions ?" />
+
+    <TextView
+        android:id="@+id/subquestion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Questions ?" />
 
     <Button
         android:id="@+id/yes"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:text="Yes"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintTop_toBottomOf="@+id/subquestion" />
 
     <Button
         android:id="@+id/no"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="NO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/yes" />
 
