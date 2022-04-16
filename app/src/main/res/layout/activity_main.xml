@@ -7,26 +7,55 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/arthritis"
+        android:id="@+id/gout"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="88dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
+        android:src="@drawable/gout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gout"
+        android:textColor="#000"
+        android:textSize="35sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/gout"
+        app:layout_constraintEnd_toEndOf="@+id/gout"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/gout"
+        app:layout_constraintTop_toTopOf="@+id/gout"
+        app:layout_constraintVertical_bias="0.81" />
+
+
+
     <ImageView
-        android:id="@+id/gout"
+        android:id="@+id/arthritis"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/arthritis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arthritis" />
+        app:layout_constraintTop_toBottomOf="@+id/gout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arthritis"
+        android:textColor="#000"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/arthritis"
+        app:layout_constraintEnd_toEndOf="@+id/arthritis"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/arthritis"
+        app:layout_constraintTop_toTopOf="@+id/arthritis"
+        app:layout_constraintVertical_bias="0.758" />
 
     <Button
         android:id="@+id/logout"
@@ -37,6 +66,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gout" />
+        app:layout_constraintTop_toBottomOf="@+id/arthritis" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

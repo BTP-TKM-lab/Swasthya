@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Swasthya</string>
+    <string name="title_activity_gout_treatment">Gout_treatment</string>
+    <string name="tab_text_1"> Non-pharma therapy</string>
+    <string name="tab_text_2">Ayurvedic Treatment</string>
+    <string name="tab_text_3">Complication-Allopathic</string>
 </resources>

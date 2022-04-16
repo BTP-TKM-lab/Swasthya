@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     Button Logout;
     ImageView arthritis,gout;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

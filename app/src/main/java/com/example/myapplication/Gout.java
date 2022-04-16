@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -72,6 +73,13 @@ public class Gout extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("You have symptoms for Gout, Please contact your doctor to the earliest.");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),Gout_treatment.class));
+                }
+            });
         }
         else if(binarytree1.question.equals("Tophaceous Gout")){
             //subquestion.setText("");
@@ -84,6 +92,13 @@ public class Gout extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("You have symptoms for Gout, Please contact your doctor to the earliest");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),Gout_treatment.class));
+                }
+            });
 
         }
         else if(binarytree1.question.equals("true2")){
@@ -94,6 +109,13 @@ public class Gout extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("You have symptoms for Gout, Please contact your doctor to the earliest.");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),Gout_treatment.class));
+                }
+            });
         }
         else if(binarytree1.question.equals("false1")){
             //subquestion.setText("");
