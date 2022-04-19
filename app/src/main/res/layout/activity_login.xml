@@ -173,18 +173,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
+        android:background="@drawable/rounded_btn"
         android:backgroundTint="@color/orange_600"
         android:padding="15dp"
         android:text="Sign In"
+        android:layout_margin="20dp"
         android:textSize="15dp" />
+
     <Button
         android:id="@+id/SignUpbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_btn"
         android:backgroundTint="@color/orange_600"
         android:padding="15dp"
-        android:layout_marginBottom="20dp"
         android:text="Sign Up"
         android:textSize="15dp" />
 

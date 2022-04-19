@@ -9,6 +9,7 @@
     <ImageView
         android:id="@+id/gout"
         android:layout_width="200dp"
+        android:background="@drawable/rounded_btn"
         android:layout_height="200dp"
         android:layout_marginTop="88dp"
         android:src="@drawable/gout"
@@ -59,7 +60,8 @@
 
     <Button
         android:id="@+id/logout"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
+        android:background="@drawable/rounded_btn"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="Logout"

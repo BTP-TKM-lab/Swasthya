@@ -7,17 +7,18 @@
     tools:context=".Mcq_questions">
 
     <TextView
-        android:gravity="center"
         android:id="@+id/question"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        tools:text="Questions ?"
+        android:gravity="center"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.101"
+        tools:text="Questions ?" />
 
     <Button
         android:id="@+id/yes"
@@ -26,6 +27,8 @@
         android:layout_marginTop="40dp"
         android:text="Yes"
         android:textStyle="bold"
+        android:background="@drawable/rounded_btn"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="NO"
+        android:background="@drawable/rounded_btn"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

@@ -238,6 +238,9 @@
         android:backgroundTint="@color/orange_600"
         android:padding="15dp"
         android:textSize="15dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_btn"
+
         android:layout_marginHorizontal="15dp"/>
     <Button
         android:id="@+id/Loginbutton"
@@ -246,6 +249,8 @@
         android:text="Log In"
         android:backgroundTint="@color/orange_600"
         android:padding="15dp"
+        android:background="@drawable/rounded_btn"
+
         android:textSize="15dp"
         android:layout_marginHorizontal="15dp"/>
     <androidx.constraintlayout.widget.ConstraintLayout
