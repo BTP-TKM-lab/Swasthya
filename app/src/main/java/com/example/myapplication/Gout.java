@@ -123,7 +123,7 @@ public class Gout extends AppCompatActivity {
             setContentView(R.layout.activity_diagnosis);
             res1=findViewById(R.id.res1);
             res2=findViewById(R.id.res2);
-            res1.setText("Good News! Joint pain is the preliminary symptom of Arthritis. Since, you are not experiencing joint pain, it is most certain that you are not having Arthritis.");
+            res1.setText("After assessing your responses, you don't seem to have necessary symptoms for Gout.");
             res2.setText("");
         }
         else if(binarytree1.question.equals("false2")){
