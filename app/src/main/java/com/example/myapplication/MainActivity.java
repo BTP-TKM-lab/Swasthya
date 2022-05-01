@@ -15,14 +15,12 @@ import android.widget.ImageView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button Logout;
     ImageView arthritis,gout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Logout=findViewById(R.id.logout);
         arthritis=findViewById(R.id.arthritis);
         gout=findViewById(R.id.gout);
         arthritis.setOnClickListener(new View.OnClickListener() {
@@ -43,14 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),Login.class));
-                finish();
-            }
-        });
+
     }    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {

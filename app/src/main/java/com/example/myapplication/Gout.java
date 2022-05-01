@@ -125,6 +125,8 @@ public class Gout extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("After assessing your responses, you don't seem to have necessary symptoms for Gout.");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setVisibility(View.GONE);
         }
         else if(binarytree1.question.equals("false2")){
             //subquestion.setText("");
@@ -134,6 +136,8 @@ public class Gout extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("After assessing your responses, you don't seem to have necessary symptoms for Gout.");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setVisibility(View.GONE);
         }
         else if(binarytree1.question.equals("Positive w/RA")){
             //subquestion.setText("");

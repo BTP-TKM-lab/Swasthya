@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -9,6 +10,14 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".arthritis"
+            android:exported="false"
+            android:label="@string/title_activity_arthritis"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".doctor"
+            android:exported="false" />
         <activity
             android:name=".Gout_treatment"
             android:exported="false"

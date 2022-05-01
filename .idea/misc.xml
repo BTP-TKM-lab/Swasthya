@@ -8,7 +8,9 @@
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1875" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/drawable/ic_logo_background.xml" value="0.2085" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/drawable/rounded_btn.xml" value="0.221" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_arthritis.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_diagnosis.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_doctor.xml" value="0.4" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_gout.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_gout_treatment.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_initial2.xml" value="0.2234375" />
@@ -19,10 +21,14 @@
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_profile.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/arthritis_treatment_screen1.xml" value="0.14114583333333333" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/arthritis_treatment_screen2.xml" value="0.14114583333333333" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/arthritis_treatment_screen3.xml" value="0.14114583333333333" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/fragment_arthritis.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/fragment_gout_treatment.xml" value="0.22282608695652173" />
-        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen1.xml" value="0.22282608695652173" />
-        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen2.xml" value="0.22282608695652173" />
-        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen3.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen1.xml" value="0.3312741312741313" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen2.xml" value="0.152" />
+        <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/gout_treatment_screen3.xml" value="0.176" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/layout/mcq.xml" value="0.22282608695652173" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/menu/menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/vipin/AndroidStudioProjects/Firebase_Login/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1875" />

@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
 public class Initial_actitvity1 extends AppCompatActivity {
-    EditText name,age,blood_group;
+    EditText name,age,blood_group,gender;
     Button next;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Initial_actitvity1 extends AppCompatActivity {
         name=findViewById(R.id.edit_name);
         age=findViewById(R.id.edit_age);
         blood_group=findViewById(R.id.edit_bloodgroup);
+        gender=findViewById(R.id.edit_gender);
         next=findViewById(R.id.next);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,10 +33,13 @@ public class Initial_actitvity1 extends AppCompatActivity {
                 SharedPreferences.Editor editor=sharedPreferences.edit();
 
                 String Blood=blood_group.getText().toString().toLowerCase(Locale.ROOT);
-                if(!Name.isEmpty() && !Age.isEmpty() && !Blood.isEmpty()){
+                String Gender=gender.getText().toString().toLowerCase(Locale.ROOT);
+
+                if(!Name.isEmpty() && !Age.isEmpty() && !Blood.isEmpty() && !Gender.isEmpty() ){
                     editor.putString("name",Name);
                     editor.putString("age",Age);
                     editor.putString("blood",Blood);
+                    editor.putString("gender",Gender);
                     editor.apply();
                     startActivity(new Intent(getApplicationContext(),Initial_activity2.class));
                 }

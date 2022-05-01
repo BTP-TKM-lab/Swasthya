@@ -59,6 +59,8 @@ public class Initial_activity3 extends AppCompatActivity {
         map.put("name",sharedPreferences.getString("name",""));
         map.put("age",sharedPreferences.getString("age",""));
         map.put("blood",sharedPreferences.getString("blood",""));
+        map.put("gender",sharedPreferences.getString("gender",""));
+
         map.put("q1",sharedPreferences.getString("q1",""));
         map.put("q2",sharedPreferences.getString("q2",""));
         map.put("q3",sharedPreferences.getString("q3",""));

@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -71,6 +72,13 @@ public class Mcq_questions extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("Since you are suffering from symmetric joint pain, which is a key defining symptom of RA.");
             res2.setText("You should consult your doctor and take a RA test to confirm the same.");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),arthritis.class));
+                }
+            });
         }
         else if(binarytree1.question.equals("true2")){
 
@@ -79,6 +87,13 @@ public class Mcq_questions extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("Since you are suffering from inflammation, there is a high chance that you are suffering from Arthritis, particulary, Rheumatoid Arthritis.");
             res2.setText("You should take a test for the same at the earliest.");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(getApplicationContext(),arthritis.class));
+                }
+            });
         }
         else if(binarytree1.question.equals("false1")){
 
@@ -87,6 +102,8 @@ public class Mcq_questions extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("Good News! Joint pain is the preliminary symptom of Arthritis. Since, you are not experiencing joint pain, it is most certain that you are not having Arthritis.");
             res2.setText("");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setVisibility(View.GONE);
         }
         else if(binarytree1.question.equals("false2")){
 
@@ -95,6 +112,8 @@ public class Mcq_questions extends AppCompatActivity {
             res2=findViewById(R.id.res2);
             res1.setText("Good News! Since, you are not experiencing symmetric pain, joint inflammation or morning stiffness which are the key features of arthritis, you  are most likely not suffering from Arthritis.");
             res2.setText("You can wait for some time before you take the test for Arthritis if the problem persists in the future.");
+            Button treatment_btn=findViewById(R.id.treatment_management);
+            treatment_btn.setVisibility(View.GONE);
         }
         else if(binarytree1.question.equals("Positive w/RA")){
 

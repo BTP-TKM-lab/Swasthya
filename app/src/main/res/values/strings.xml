@@ -4,4 +4,9 @@
     <string name="tab_text_1"> Non-pharma therapy</string>
     <string name="tab_text_2">Ayurvedic Treatment</string>
     <string name="tab_text_3">Complication-Allopathic</string>
+    <string name="tab_text_4"> Non-pharma therapy</string>
+    <string name="tab_text_5">Ayurvedic Treatment</string>
+    <string name="tab_text_6"> Meditation &amp; Yoga</string>
+    <string name="text_with_bullet">\u2022</string>
+    <string name="title_activity_arthritis">arthritis</string>
 </resources>
